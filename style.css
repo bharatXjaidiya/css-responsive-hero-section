@@ -30,7 +30,9 @@ header ul li {
 }
 
 section h1 {
-  font-size: 6.5rem;
+  font-size: 4.7rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 section .cards {
   display: flex;
@@ -38,9 +40,10 @@ section .cards {
   align-items: center;
   gap: 1rem;
   padding: 0px 2px;
+  margin: 10px 0px;
 }
 section .cards .card {
-  width: 8.5rem;
+  width: 10.5rem;
   position: relative;
   overflow: hidden;
 }
@@ -67,4 +70,16 @@ section .cards .card .bottom i {
 }
 section .cards .card:hover .bottom {
   bottom: 0px;
+}
+section aside {
+  display: flex;
+  padding: 10px;
+  gap: 5px;
+}
+section aside div h3 {
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+section aside div p {
+  font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
