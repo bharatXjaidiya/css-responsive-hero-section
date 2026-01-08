@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,25 +6,71 @@
 }
 
 html,
-body{
+body {
     width: 100%;
     height: 100%;
     background-color: rgb(228, 222, 222);
 }
 
-header{
+html {
+    font-size: clamp(14px, 1vw + 10px, 100px);
+}
+
+header {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    
-    ul{
+
+    ul {
         display: flex;
         gap: 0.5rem;
 
-        li{
+        li {
             list-style: none;
         }
     }
 }
 
- 
+section {
+    h1 {
+        font-size: 6.5rem;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 0px 2px;
+        .card {
+            width: 8.5rem;
+            position: relative;
+            overflow: hidden;
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+
+            .bottom {
+                background: linear-gradient(transparent, black);
+                height: 20%;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 0px 5px;
+                align-items: center;
+                transition: all 0.3s ease-out;
+                position: absolute;
+                bottom: -20%;
+                i {
+                    color: white;
+                }
+            }
+        }
+        .card:hover .bottom {
+        bottom: 0px;
+    }
+
+}
+}
