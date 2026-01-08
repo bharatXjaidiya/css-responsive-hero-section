@@ -75,6 +75,7 @@ section aside {
   display: flex;
   padding: 10px;
   gap: 5px;
+  margin-top: 10px;
 }
 section aside div h3 {
   font-size: 2rem;
@@ -82,4 +83,15 @@ section aside div h3 {
 }
 section aside div p {
   font-size: 1.5rem;
+}
+
+footer {
+  padding: 10px 5px;
+  background-color: blanchedalmond;
+  text-align: center;
+}
+
+footer h2:nth-child(1) {
+  font-size: 2rem;
+  font-weight: 100;
 }/*# sourceMappingURL=style.css.map */
