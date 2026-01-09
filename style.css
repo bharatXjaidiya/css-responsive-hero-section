@@ -14,7 +14,7 @@ body {
 }
 
 html {
-  font-size: clamp(14px, 1vw + 10px, 100px);
+  font-size: clamp(13px, 1vw, 100px);
 }
 
 header {
@@ -44,7 +44,7 @@ section .cards {
   margin: 10px 0px;
 }
 section .cards .card {
-  width: 10.5rem;
+  width: 200px;
   position: relative;
   overflow: hidden;
 }
@@ -79,6 +79,9 @@ section aside {
   gap: 5px;
   margin-top: 10px;
 }
+section aside div {
+  text-align: center;
+}
 section aside div h3 {
   font-size: 2rem;
   margin-bottom: 6px;
@@ -91,6 +94,7 @@ footer {
   padding: 10px 5px;
   background-color: blanchedalmond;
   text-align: center;
+  margin: 0px auto;
 }
 
 footer h2:nth-child(1) {
