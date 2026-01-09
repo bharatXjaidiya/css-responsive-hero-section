@@ -16,11 +16,24 @@ body {
 html {
     font-size: clamp(13px, 1vw, 100px);
 }
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 
 header {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 1rem;
 
     ul {
         display: flex;
@@ -34,9 +47,10 @@ header {
 
 section {
     h1 {
-        font-size: 4.7rem;
-        text-transform: uppercase;
+        font-size: 6rem;
+        text-transform: capitalize;
         text-align: center;
+        font-weight: 300;
     }
 
     .cards {
@@ -88,8 +102,10 @@ section {
         padding: 10px;
         gap: 5px;
         margin-top: 10px;
+
         div {
             text-align: center;
+
             h3 {
                 font-size: 2rem;
                 margin-bottom: 6px;
@@ -113,5 +129,142 @@ footer {
 footer h2:nth-child(1) {
     font-size: 2rem;
     font-weight: 100;
+}
+
+
+@media (min-width: 768px) {
+
+    header {
+        font-size: 2rem;
+
+        ul {
+            gap: 1rem;
+        }
+    }
+
+    section {
+        position: relative;
+
+        h1 {
+            font-size: 14rem;
+            position: relative;
+        }
+
+        .cards {
+            .card {
+                position: absolute;
+                width: 150px;
+            }
+
+            .card:nth-child(1) {
+                right: 98px;
+                bottom: 195px;
+
+            }
+
+            .card:nth-child(2) {
+                right: 203px;
+                bottom: 100px;
+                z-index: 10;
+
+            }
+
+            .card:nth-child(3) {
+                right: 330px;
+                bottom: 206px;
+
+
+            }
+        }
+
+
+        aside {
+            border: 1px solid gray;
+            border-radius: 20px;
+            border-left: none;
+            flex-direction: column;
+            width: 30%;
+
+            div {
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        margin-top: 10px;
+    }
+    
+
+
+}
+
+@media (min-width: 1024px) {
+
+    section {
+        h1 {
+            font-size: 20rem;
+        }
+
+        .cards {
+            .card {
+                position: absolute;
+                width: 170px;
+            }
+
+            .card:nth-child(1) {
+                right: 12rem;
+                bottom: 14rem;
+
+            }
+
+            .card:nth-child(2) {
+                right: 20rem;
+                bottom: 5rem;
+                z-index: 10;
+
+            }
+
+            .card:nth-child(3) {
+                right: 32rem;
+                bottom: 12rem;
+
+
+            }
+        }
+    }
+
+    footer{
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+}
+@media (min-width:1440px) {
+    section {
+        max-width: 90vw;
+        margin: auto;
+    }
+
+}
+
+@media (min-width:1800px) {
+    section {
+        max-width: 90vw;
+        margin: auto;
+        .cards{
+            .card{
+                width: 250px;
+            }
+        }
+    }
+
 }
 
