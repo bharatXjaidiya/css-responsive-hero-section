@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html,
@@ -81,17 +82,20 @@ section {
 
     }
 
-    aside{
+    aside {
+        margin: 10px 0px;
         display: flex;
         padding: 10px;
         gap: 5px;
         margin-top: 10px;
-        div{
-            h3{
+
+        div {
+            h3 {
                 font-size: 2rem;
                 margin-bottom: 6px;
             }
-            p{
+
+            p {
                 font-size: 1.5rem;
             }
         }
@@ -99,14 +103,13 @@ section {
 
 }
 
-footer{
+footer {
     padding: 10px 5px;
     background-color: blanchedalmond;
     text-align: center;
 }
 
-footer h2:nth-child(1){
+footer h2:nth-child(1) {
     font-size: 2rem;
     font-weight: 100;
 }
-
