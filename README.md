@@ -17,4 +17,4 @@ A clean and responsive landing page designed to showcase modern fashion products
 - Responsive design fundamentals
 
 ## Credits
-Inspired by learning resources from @CodeWithHarry.
+Inspired by learning resources from @sheryians
