@@ -57,6 +57,9 @@ section .cards {
   padding: 0px 2px;
   margin: 10px 0px;
 }
+section .cards .card:hover .bottom {
+  bottom: 0px;
+}
 section .cards .card {
   width: 200px;
   position: relative;
@@ -82,9 +85,6 @@ section .cards .card .bottom {
 }
 section .cards .card .bottom i {
   color: white;
-}
-section .cards .card:hover .bottom {
-  bottom: 0px;
 }
 section aside {
   margin: 10px 0px;

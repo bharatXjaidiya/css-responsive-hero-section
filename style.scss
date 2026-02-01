@@ -61,6 +61,10 @@ section {
         padding: 0px 2px;
         margin: 10px 0px;
 
+        .card:hover .bottom {
+            bottom: 0px;
+        }
+        
         .card {
             width: 200px;
             position: relative;
@@ -90,9 +94,7 @@ section {
             }
         }
 
-        .card:hover .bottom {
-            bottom: 0px;
-        }
+        
 
     }
 
